@@ -21,7 +21,10 @@ const pessoa = {
 
 console.log(pessoa.apresentar());
 
-function somar(a: number, b: number): number{
+function somar(a:number, b:number): number{
     return a + b;
 }
 console.log(somar(3,4));
+
+
+//a interface que possui o export antes, pode ser ultilizada por outros arquivos, sem o export, a interface funciona só no arquivo
