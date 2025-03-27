@@ -11,6 +11,6 @@ export class ItemDecoracaoSustentavel implements ProdutoEcologico {
         this.material = material;
     }
     exibirDetalhes(): void {
-        console.log(`Item de Decoração: ${this.nome}, Preço: R$${this.preco.toFixed(2)}, Material: ${this.material}, Dimensões: ${this.dimensoes.largura}x${this.dimensoes.altura}x${this.dimensoes.profundidade} cm`);
+        console.log(`nome: ${this.nome}, preco: ${this.preco}, material: ${this.material}`);
     }
 }
