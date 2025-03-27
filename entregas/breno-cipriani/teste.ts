@@ -1,6 +1,9 @@
 import { AlimentoOrganico } from "./AlimentoOrganico";
 import { ProdutoLimpezaBiodegradavel } from "./ProdutoLimpezaBiodegradavel";
 import { ItemDecoracaoSustentavel } from "./ItemDecoracaoSustentavel";
+import { GerenciadorProdutos } from "./GerenciadorDeProdutos";
+
+const gerenciador = new GerenciadorProdutos();
 
 const pera = new AlimentoOrganico("Pera Orgânica", 5.99, new Date("2024-12-31"));
 const detergente = new ProdutoLimpezaBiodegradavel("Detergente Natural", 12.50, 500);
@@ -9,3 +12,9 @@ const pote = new ItemDecoracaoSustentavel("Pote de Vidro", 29.90, "Pote Reciclad
 pera.exibirDetalhes;
 detergente.exibirDetalhes;
 pote.exibirDetalhes;
+
+gerenciador.adicionarProduto(pera);
+gerenciador.adicionarProduto(detergente);
+gerenciador.adicionarProduto(pote);
+
+gerenciador.listarProdutos();
