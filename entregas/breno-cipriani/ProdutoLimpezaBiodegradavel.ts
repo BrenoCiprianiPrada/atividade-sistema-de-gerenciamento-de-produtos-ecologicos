@@ -12,6 +12,6 @@ export class ProdutoLimpezaBiodegradavel implements ProdutoEcologico {
     }
 
     exibirDetalhes(): void {
-        console.log(`nome: ${this.nome}, preco: ${this.preco}, volume: ${this.volume}`);
+        console.log(`Detalhes: nome: ${this.nome}, preco: ${this.preco}, volume: ${this.volume}`);
     }
 }
